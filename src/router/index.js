@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import he1 from '@/components/he1'
-import he2 from '@/components/he2'
+const HelloWorld = () => import( '@/components/HelloWorld')
+const he1 = () => import( '@/components/he1')
+const he2 = () => import( '@/components/he2')
+
 Vue.use(Router)
 
 export default new Router({
